@@ -36,12 +36,18 @@ public class EjemplosExpresionesLogicas {
         System.out.println("Tu edad es " + edad);
 // Limpiar porquería
         teclado.nextLine();
-        System.out.println("Introduce tu nombre ");
+        System.out.println("Introduce tu nombre");
         nombre = teclado.nextLine();
         System.out.println("Tu nombre es " + nombre);
         
-        System.out.println("Introduce tu peso ");
+        System.out.println("Introduce tu peso");
         peso = teclado.nextDouble();
+        
+        System.out.println("Introduce tu estatura");
+        estatura = teclado.nextInt();
+        
+        teclado.nextLine();
+        
         
         
         
@@ -66,22 +72,28 @@ public class EjemplosExpresionesLogicas {
         // C. - No mide 175cm
         
         
+        boolean c = estatura !=175;
+        System.out.println("¿Tu estatura es distinta a 175? " + c);
+        
         
         
         // D. - La estatura está entre 100 cm y 180 cm, excluidos
         
         
+        boolean d = estatura>100&&estatura<180;
+        System.out.println("¿Tu estatura está entre 100 y 180 excluidos? " + d);
         
         
         // E. - La edad más 10 años no supera los 60 años
         
         
+        boolean e = edad+10<60;
+        System.out.println("¿Tu edad sumada a 10 años es menor a 60? " + e);
         
         
         // F. - El nombre es igual a "Pablo", ignorando mayúsculas y
         // minúsculas. Usa equalsIgnoreCase de los String
-        
-        
+
         
         
         // G. - El apellido contiene la letra "j". Usa contains de los String
@@ -96,6 +108,9 @@ public class EjemplosExpresionesLogicas {
         
         // I. - La edad no está entre 40 y 50 años
         
+        boolean i = edad>=40&&edad<=50;
+        i=!i;
+        System.out.println("Tu edad no está entre 40 y 50 años " + i);
         
         
         
