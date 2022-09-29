@@ -39,7 +39,7 @@ public class EjemplosExpresionesLogicas {
         System.out.println("Introduce tu nombre");
         nombre = teclado.nextLine();
         System.out.println("Tu nombre es " + nombre);
-        
+
         System.out.println("Introduce tu peso");
         peso = teclado.nextDouble();
         
@@ -48,7 +48,9 @@ public class EjemplosExpresionesLogicas {
         
         teclado.nextLine();
         
-        
+        System.out.println("Introduce tu apellido");
+        apellido = teclado.nextLine();
+              
         
         
         // Guardar en variables booleanas el resultado de evaluar las siguientes
@@ -93,17 +95,22 @@ public class EjemplosExpresionesLogicas {
         
         // F. - El nombre es igual a "Pablo", ignorando mayúsculas y
         // minúsculas. Usa equalsIgnoreCase de los String
-
+        
+        boolean f = (nombre.equalsIgnoreCase("Pablo"));
+        System.out.println("¿Tu nombre es Pablo? " + f);
+        
         
         
         // G. - El apellido contiene la letra "j". Usa contains de los String
         
-        
+        boolean g = (apellido.contains("j"));
+        System.out.println("¿Tu apellido contiene j? " + g);
         
         
         // H. - El apellido termina en "dez". Usa endsWith de los String
         
-        
+        boolean h = (apellido.endsWith("dez"));
+        System.out.println("¿Tu apellido acaba en dez? " + h);
         
         
         // I. - La edad no está entre 40 y 50 años
