@@ -5,6 +5,7 @@
 package algoritmossecuenciales;
 
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -20,10 +21,10 @@ public class Algoritmo08 {
         double presupuestoGinecologia;
         double presupuestoTraumatologia;
         double presupuestoPediatria;
+        double presupuesto;
         
-        Scanner teclado = new Scanner(System.in);
-        System.out.println("Presupuesto total");
-        double presupuesto = teclado.nextDouble();
+        String presupuestoString = JOptionPane.showInputDialog("Introduce el presupuesto");
+        presupuesto = Double.parseDouble(presupuestoString);
         
         presupuestoGinecologia= GINECOLOGIA*presupuesto;
         presupuestoTraumatologia= TRAUMATOLOGIA*presupuesto;

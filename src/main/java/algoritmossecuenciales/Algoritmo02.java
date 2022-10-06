@@ -5,6 +5,7 @@
 package algoritmossecuenciales;
 
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -28,11 +29,10 @@ public class Algoritmo02 {
         
         // Introducimos el método de entrada
         
-        Scanner teclado = new Scanner(System.in);
+        String radioString = JOptionPane.showInputDialog("Introduce "
+                + "el radio");
         
-        System.out.println("Introduce el radio");
-        
-        radio = teclado.nextDouble();
+        radio = Double.parseDouble(radioString);
         
         longitud = CONSTANTE_MULTIPLICACION*CONSTANTE_PI*radio;
         area = CONSTANTE_PI*Math.pow(radio,2);

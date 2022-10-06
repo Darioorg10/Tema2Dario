@@ -5,6 +5,7 @@
 package algoritmossecuenciales;
 
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -24,10 +25,10 @@ public class Algoritmo01 {
         
         Scanner teclado = new Scanner(System.in);
         
-        System.out.println("Introduce los grados Celsius que quieras "
-                + "convertir a Fahrenheit: ");
+        String gradosCString = JOptionPane.showInputDialog("Introduce "
+                + "los grados Celsius que quieras convertir a Fahrenheit");
         
-        gradosC = teclado.nextDouble();
+        gradosC = Double.parseDouble(gradosCString);
         
         resultF = gradosC*CONSTANTE_MULTIPLICACION+CONSTANTE_SUMA;
         
