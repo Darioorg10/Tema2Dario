@@ -32,8 +32,10 @@ public class Algoritmo01 {
         
         resultF = gradosC*CONSTANTE_MULTIPLICACION+CONSTANTE_SUMA;
         
-        System.out.println(gradosC + " grados Celsius son " + resultF 
-        + " grados Fahrenheit");
+        
+        JOptionPane.showMessageDialog(null, gradosC + " grados Celsius son "
+                + resultF + " grados Fahrenheit");
+        
     }
     
 }

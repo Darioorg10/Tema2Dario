@@ -25,7 +25,7 @@ public class Ej04 {
         segunda = a>b;
         tercera = a==b;
         cuarta = a!=b;
-
+                                                 //%b es el formato de boolean
         System.out.printf("""
                           ¿a es menor que b?: %b
                           ¿a es mayor que b?: %b

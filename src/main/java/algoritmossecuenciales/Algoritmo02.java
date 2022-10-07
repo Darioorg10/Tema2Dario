@@ -43,6 +43,9 @@ public class Algoritmo02 {
                            El area es: %f
                            El volumen es: %f""",longitud,area,volumen);
         
+        JOptionPane.showMessageDialog(null, "La longitud es: " + longitud
+        + "El area es: " + area + "El volumen es " + volumen);
+        
     }
     
 }

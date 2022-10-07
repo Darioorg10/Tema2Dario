@@ -42,7 +42,8 @@ public class Algoritmo10 {
         areaRectangulo = (ladoB*ladoC);
         areaTotal = (areaTriangulo+areaRectangulo);
         
-        System.out.println("El area total es " + areaTotal + "m²");
+        JOptionPane.showMessageDialog(null, "El area total es "
+        + areaTotal + " m²");
         
         
     }
